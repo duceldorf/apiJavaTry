@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'ApiJava'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.testng', name: 'testng', version: '6.14.3'
+    implementation group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.14.v20181114'
+    implementation group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.13'
+    implementation group: 'org.apache.spark', name: 'spark-core_2.12', version: '2.4.0'
+    implementation group: 'org.apache.spark', name: 'spark-sql_2.12', version: '2.4.0'
+    implementation group: 'org.springframework', name: 'spring-core', version: '5.1.2.RELEASE'
+
+}
